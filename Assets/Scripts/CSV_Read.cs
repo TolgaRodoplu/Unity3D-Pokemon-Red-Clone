@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 public class CSV_Read : MonoBehaviour
 {
-    public static string  ReadCSV(string file, int row_id)
+    public static string[]  ReadCSV(string file, int row_id, int mode)
     {
         StreamReader reader = new StreamReader(Application.dataPath + "/Data/" + file + ".csv");
         bool endOfFile = false;
@@ -19,17 +19,26 @@ public class CSV_Read : MonoBehaviour
                 endOfFile = true;
                 break;
             }
-
-            if (id == row_id)
+            if (mode == 0)//for reading uniquely identified pokemon table
             {
-
-                return data_String;
+                if (id == row_id)
+                {
+                    return data_String.Split(',');
+                }
+                else
+                    id++;
             }
-            else
-                id++;
+            if (mode == 1) //for reading from area spesific tables with spawn rates like "Route_1.csv"
+            {
+                string[] current_data = data_String.Split(',');
+                if (row_id <= System.Int32.Parse(current_data[0]))
+                {
+                    return current_data;
+                }
+            }
         }
 
-        return "not found";
-        
+        string[] empty = {};
+        return empty;
     }
 }

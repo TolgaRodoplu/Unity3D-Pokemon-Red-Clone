@@ -6,6 +6,7 @@ using UnityEngine;
 public class Pokemon 
 {
     int id;
+    int level;
     int next_evolution_lvl;
     string species;
     int type1_id;
@@ -23,8 +24,6 @@ public class Pokemon
     //Move [] moves;
     int[] ev_yield;
     string pokedex_entry;
-
-    int level;
     int evolve_level;//if null this pokemon will be evolved by other means
     bool isShiny;
     //Nature ?????????????????
@@ -50,55 +49,85 @@ public class Pokemon
     }
 
     //Constructer for Wild_Pokemon
-    public Pokemon(int id, int level)
+    public Pokemon(string[] line, int lvl)
     {
-        string[] pokemon_data = CSV_Read.ReadCSV("Pokemon", id).Split(',');
-        //Debug.Log(pokemon_data);
-        
+        string[] pokemon_data = line;
+
+        stats = new int[6,6];
+        ev_yield = new int[6];
+
+        //initilize level
+        level = lvl;
+        Debug.Log(level);
+
         //initilize id
         id = System.Int32.Parse(pokemon_data[0]);
+        Debug.Log(id);
 
         //initilize next_evolution_lvl
         next_evolution_lvl = System.Int32.Parse(pokemon_data[1]);
+        Debug.Log(next_evolution_lvl);
 
         //initilize species name
         species = pokemon_data[2];
+        Debug.Log(species);
 
         //initilize type1_id and name
         type1_id = System.Int32.Parse(pokemon_data[3]);
         type1_name = pokemon_data[4];
+        Debug.Log(type1_id + type1_name);
 
         //initilize type2_id and name
         type2_id = System.Int32.Parse(pokemon_data[5]);
         type2_name = pokemon_data[6];
+        Debug.Log(type2_id + type2_name);
 
         //initilize Base Stats
         for (int i = 0; i < 6; i++)
-            stats[0, i] = System.Int32.Parse(pokemon_data[i+7]);
+        {
+            stats[0, i] = System.Int32.Parse(pokemon_data[i + 7]);
+            Debug.Log(stats[0, i]);
+        }
+            
 
         //initilize IV values
         for (int i = 0; i < 6; i++)
+        {
             stats[1, i] = Random.Range(0, 32);
+            Debug.Log(stats[1, i]);
+        }
+            
 
         //initilize EV values
         for (int i = 0; i < 6; i++)
+        {
             stats[2, i] = 0;
+            Debug.Log(stats[2, i]);
+        }
+            
 
         //initilize EV yields
         for (int i = 0; i < 6; i++)
+        {
             ev_yield[i] = System.Int32.Parse(pokemon_data[i + 13]);
+            Debug.Log(ev_yield[i]);
+        }
+            
 
         //initilize pokedex entry
         pokedex_entry = pokemon_data[19];
+        Debug.Log(pokedex_entry);
 
         //initilize calculate the total stats
         Calculate_Stats();
+        
     }
 
     void Level_Up()
     {
         level++;
         Calculate_Stats();
+
     }
 
     

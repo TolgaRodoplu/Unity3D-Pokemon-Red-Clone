@@ -16,7 +16,7 @@ public class Game_Maneger : MonoBehaviour
 
             if (spawn <= Spawn_Rate)
             {
-                //Generate_Pokemon();
+                gameObject.GetComponent<Generate>().Spawn();
                 Debug.Log("Something Appeared");
             }
                
