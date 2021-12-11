@@ -198,6 +198,8 @@ GameObject:
   - component: {fileID: 446295910}
   - component: {fileID: 446295911}
   - component: {fileID: 446295912}
+  - component: {fileID: 446295914}
+  - component: {fileID: 446295913}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -275,6 +277,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19211b52fb51f2e4c8377c16a3db1335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &446295913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446295907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9877236b6414da4a82a4d1e625acd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &446295914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446295907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3ca4d4e208eb8498129c93949ad926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area: Route_1
 --- !u!4 &477495335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5194589341112116985, guid: 712bf965ccea93949a7cbc42a36f1244, type: 3}
