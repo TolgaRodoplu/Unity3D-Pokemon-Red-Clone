@@ -9,10 +9,11 @@ public class CSV_Read : MonoBehaviour
         StreamReader reader = new StreamReader(Application.dataPath + "/Data/" + file + ".csv");
         bool endOfFile = false;
         int id = 1;
+        string data_String = reader.ReadLine();
 
         while (!endOfFile)
         {
-            string data_String = reader.ReadLine();
+            data_String = reader.ReadLine();
 
             if (data_String == null)
             {
