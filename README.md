@@ -1,6 +1,6 @@
 # Unity3D-Pokemon-Red-Clone
 
-This is a ongoing personal project aiming to recreate the Pokemon Red in Unity3D.
+This is an ongoing personal project aiming to recreate the Pokemon Red in Unity3D.
 
 Project is created in Unity3D_2021.1.7f1.
 
