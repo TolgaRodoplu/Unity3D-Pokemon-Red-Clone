@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   area: Route_1
+  team: []
 --- !u!4 &477495335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5194589341112116985, guid: 712bf965ccea93949a7cbc42a36f1244, type: 3}

@@ -1,21 +1,21 @@
-ID,Next_Id,Species,Type1_Id,Type1_Name,Type2_Id,Type2_Name,Hp_Bs,Atk_Bs,Def_Bs,Sp_Atk_Bs,Sp_Def_Bs,Spd_Bs,Hp_Yld,Atk_Yld,Def_Yld,Sp_Atk_Yld,Sp_Def_Yld,Spd_Yld,PokÈdex_Entry
-1,2,Bulbasaur,3,Grass,7,Poison,45,49,49,65,65,45,0,0,0,1,0,0,A strange seed was planted on its back at birth. The plant sprouts and grows with this POKÈMON.
-2,3,Ivysaur,3,Grass,7,Poison,65,62,63,80,80,60,0,0,0,1,1,0,"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
-3,-1,Venusaur,3,Grass,7,Poison,80,82,83,100,100,80,0,0,0,2,1,0,The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
-4,5,Charmander,1,Fire,1,Fire,39,52,43,60,50,65,0,0,0,0,0,1,"Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
-5,6,Charmeleon,1,Fire,1,Fire,58,64,58,80,65,80,0,0,0,1,0,1,"When it swings its burning tail, it elevates the temperature to unbearably high levels."
-6,-1,Charizard,1,Fire,9,Flying,78,84,78,109,85,100,0,0,0,3,0,0,Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.
-7,8,Squirtle,2,Water,2,Water,44,48,65,50,64,43,0,0,1,0,0,0,"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."
-8,9,Wartortle,2,Water,2,Water,59,63,80,65,80,58,0,0,1,0,1,0,"Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance."
-9,-1,Blastoise,2,Water,2,Water,79,83,100,85,105,78,0,0,0,0,3,0,A brutal POKÈMON with pressurized water jets on its shell. They are used for high speed tackles.
-10,11,Caterpie,11,Bug,11,Bug,45,30,35,20,20,45,1,0,0,0,0,0,Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.
-11,12,Metapod,11,Bug,11,Bug,50,20,55,25,25,30,0,0,2,0,0,0,"This POKÈMON is vulnerable to attack while its shell is soft, exposing its weak and tender body."
-12,-1,Butterfree,11,Bug,9,Flying,60,45,50,90,80,70,0,0,0,2,1,0,"In battle, it flaps its wings at high speed to release highly toxic dust into the air."
-13,14,Weedle,11,Bug,7,Poison,40,35,30,20,20,50,0,0,0,0,0,1,"Often found in forests, eating leaves. It has a sharp venomous stinger on its head."
-14,15,Kakuna,11,Bug,7,Poison,45,25,50,25,25,35,0,0,2,0,0,0,"Almost incapable of moving, this POKÈMON can only harden its shell to protect itself from predators."
-15,-1,Beedrill,11,Bug,7,Poison,65,90,40,45,80,75,0,2,0,0,1,0,Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.
-16,17,Pidgey,0,Normal,9,Flying,40,45,40,35,35,56,0,0,0,0,0,1,A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.
-17,18,Pidgeotto,0,Normal,9,Flying,63,60,55,50,50,71,0,0,0,0,0,2,"Very protective of its sprawling territorial area, this POKÈMON will fiercely peck at any intruder."
-18,-1,Pidgeot,0,Normal,9,Flying,83,80,75,70,70,101,0,0,0,0,0,3,"When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP."
-19,20,Rattata,0,Normal,0,Normal,30,56,35,25,35,72,0,0,0,0,0,1,Bites anything when it attacks. Small and very quick. It is a common sight in many places.
-20,-1,Raticate,0,Normal,0,Normal,55,81,60,50,70,97,0,0,0,0,0,2,It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.
+ID,Next_Id,Species,Type1_Id,Type1_Name,Type2_Id,Type2_Name,Hp_Bs,Atk_Bs,Def_Bs,Sp_Atk_Bs,Sp_Def_Bs,Spd_Bs,Hp_Yld,Atk_Yld,Def_Yld,Sp_Atk_Yld,Sp_Def_Yld,Spd_Yld,Evolve_lvl,PokÈdex_Entry
+1,2,Bulbasaur,3,Grass,7,Poison,45,49,49,65,65,45,0,0,0,1,0,0,16,A strange seed was planted on its back at birth. The plant sprouts and grows with this POKÈMON.
+2,3,Ivysaur,3,Grass,7,Poison,65,62,63,80,80,60,0,0,0,1,1,0,32,"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+3,-1,Venusaur,3,Grass,7,Poison,80,82,83,100,100,80,0,0,0,2,1,0,-1,The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
+4,5,Charmander,1,Fire,1,Fire,39,52,43,60,50,65,0,0,0,0,0,1,16,"Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
+5,6,Charmeleon,1,Fire,1,Fire,58,64,58,80,65,80,0,0,0,1,0,1,36,"When it swings its burning tail, it elevates the temperature to unbearably high levels."
+6,-1,Charizard,1,Fire,9,Flying,78,84,78,109,85,100,0,0,0,3,0,0,-1,Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.
+7,8,Squirtle,2,Water,2,Water,44,48,65,50,64,43,0,0,1,0,0,0,16,"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."
+8,9,Wartortle,2,Water,2,Water,59,63,80,65,80,58,0,0,1,0,1,0,36,"Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance."
+9,-1,Blastoise,2,Water,2,Water,79,83,100,85,105,78,0,0,0,0,3,0,-1,A brutal POKÈMON with pressurized water jets on its shell. They are used for high speed tackles.
+10,11,Caterpie,11,Bug,11,Bug,45,30,35,20,20,45,1,0,0,0,0,0,7,Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.
+11,12,Metapod,11,Bug,11,Bug,50,20,55,25,25,30,0,0,2,0,0,0,10,"This POKÈMON is vulnerable to attack while its shell is soft, exposing its weak and tender body."
+12,-1,Butterfree,11,Bug,9,Flying,60,45,50,90,80,70,0,0,0,2,1,0,-1,"In battle, it flaps its wings at high speed to release highly toxic dust into the air."
+13,14,Weedle,11,Bug,7,Poison,40,35,30,20,20,50,0,0,0,0,0,1,7,"Often found in forests, eating leaves. It has a sharp venomous stinger on its head."
+14,15,Kakuna,11,Bug,7,Poison,45,25,50,25,25,35,0,0,2,0,0,0,10,"Almost incapable of moving, this POKÈMON can only harden its shell to protect itself from predators."
+15,-1,Beedrill,11,Bug,7,Poison,65,90,40,45,80,75,0,2,0,0,1,0,-1,Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.
+16,17,Pidgey,0,Normal,9,Flying,40,45,40,35,35,56,0,0,0,0,0,1,18,A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.
+17,18,Pidgeotto,0,Normal,9,Flying,63,60,55,50,50,71,0,0,0,0,0,2,36,"Very protective of its sprawling territorial area, this POKÈMON will fiercely peck at any intruder."
+18,-1,Pidgeot,0,Normal,9,Flying,83,80,75,70,70,101,0,0,0,0,0,3,-1,"When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP."
+19,20,Rattata,0,Normal,0,Normal,30,56,35,25,35,72,0,0,0,0,0,1,20,Bites anything when it attacks. Small and very quick. It is a common sight in many places.
+20,-1,Raticate,0,Normal,0,Normal,55,81,60,50,70,97,0,0,0,0,0,2,-1,It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.

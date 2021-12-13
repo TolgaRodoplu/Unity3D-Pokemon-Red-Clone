@@ -11,8 +11,8 @@ public class Pokemon
     string species;
     int type1_id;
     string type1_name;
-    int type2_id;//Can be null
-    string type2_name;//Can be null
+    int type2_id;
+    string type2_name;
     int[,] stats;
     /*stats matrix
     |||||||||||||||0-HP||1-Attack||2-Defanse||3-Sp.Atk||4-Sp.Def||5-Speed||
@@ -25,10 +25,8 @@ public class Pokemon
     int[] ev_yield;
     string pokedex_entry;
     int evolve_level;//if null this pokemon will be evolved by other means
-    bool isShiny;
     //Nature ?????????????????
     int current_hp; // When full current_hp = stats[3,0]
-    bool gender;//true=male//false=female
     string name;  //if null => name = species
     
 
@@ -112,22 +110,25 @@ public class Pokemon
             ev_yield[i] = System.Int32.Parse(pokemon_data[i + 13]);
             Debug.Log(ev_yield[i]);
         }
-            
 
+        //initilize evolution level
+        evolve_level = System.Int32.Parse(pokemon_data[19]);
+        Debug.Log(evolve_level);
+
+        /*
         //initilize pokedex entry
         pokedex_entry = pokemon_data[19];
         Debug.Log(pokedex_entry);
 
         //initilize calculate the total stats
         Calculate_Stats();
-        
+        */
     }
 
     void Level_Up()
     {
         level++;
         Calculate_Stats();
-
     }
 
     
