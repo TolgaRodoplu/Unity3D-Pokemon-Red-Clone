@@ -6,7 +6,7 @@ public class Generate : MonoBehaviour
 {
     public Pokemon current;
 
-    public void Spawn()
+    public Pokemon Spawn()
     {
         //Accessing the current route
         string route = gameObject.GetComponent<Player>().area;
@@ -33,5 +33,6 @@ public class Generate : MonoBehaviour
         //Spawn the pokemon
         current = new Pokemon(pokemon_data, lvl);
 
+        return current;
     }
 }

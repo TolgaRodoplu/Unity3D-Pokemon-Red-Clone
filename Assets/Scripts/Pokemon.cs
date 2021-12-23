@@ -5,15 +5,15 @@ using UnityEngine;
 [System.Serializable]
 public class Pokemon 
 {
-    int id;
-    int level;
-    int next_evolution_lvl;
-    string species;
-    int type1_id;
-    string type1_name;
-    int type2_id;
-    string type2_name;
-    int[,] stats;
+    public int id;
+    public int level;
+    public int next_evolution_lvl;
+    public string species;
+    public int type1_id;
+    public string type1_name;
+    public int type2_id;
+    public string type2_name;
+    public int[,] stats;
     /*stats matrix
     |||||||||||||||0-HP||1-Attack||2-Defanse||3-Sp.Atk||4-Sp.Def||5-Speed||
     ||0-Base stat||    ||        ||         ||        ||        ||       ||
@@ -22,13 +22,13 @@ public class Pokemon
     ||  3-Total  ||    ||        ||         ||        ||        ||       ||
     */
     //Move [] moves;
-    int[] ev_yield;
-    string pokedex_entry;
-    int evolve_level;//if null this pokemon will be evolved by other means
+    public int [] ev_yield;
+    public string pokedex_entry;
+    public int evolve_level;//if null this pokemon will be evolved by other means
     //Nature ?????????????????
-    int current_hp; // When full current_hp = stats[3,0]
-    string name;  //if null => name = species
-    
+    public int current_hp; // When full current_hp = stats[3,0]
+    public string name;  //if null => name = species
+    public GameObject pokemon_object;
 
     
     void Calculate_Stats()

@@ -16,12 +16,11 @@ public class Game_Maneger : MonoBehaviour
 
             if (spawn <= Spawn_Rate)
             {
-                gameObject.GetComponent<Generate>().Spawn();
+                Pokemon current = gameObject.GetComponent<Generate>().Spawn();
+                gameObject.GetComponent<Fight>().Initiate(current);
                 Debug.Log("Something Appeared");
+                
             }
-               
-            
-
         }
             
     }
